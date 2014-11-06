@@ -5,8 +5,55 @@
     tools:context="${relativePackage}.${activityClass}" >
 
     <TextView
+        android:id="@+id/textView1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/hello_world" />
+
+    <Button
+        android:visibility="invisible"
+        android:id="@+id/downButton"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginBottom="16dp"
+        android:layout_marginLeft="60dp" />
+    
+    <Button
+        android:visibility="invisible"
+        android:id="@+id/rightButton"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="51dp"
+        android:layout_marginLeft="30dp"
+        android:layout_toRightOf="@+id/textView1" />
+
+    <Button
+        android:visibility="invisible"
+        android:id="@+id/leftButton"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_alignBaseline="@+id/rightButton"
+        android:layout_alignBottom="@+id/rightButton"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="14dp" />
+
+    <Button
+        android:visibility="invisible"
+        android:id="@+id/upButton"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_above="@+id/rightButton"
+        android:layout_alignLeft="@+id/downButton" />
+
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_alignBottom="@+id/downButton"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="108dp" />
 
 </RelativeLayout>
