@@ -11,7 +11,6 @@
         android:text="@string/hello_world" />
 
     <Button
-        android:visibility="invisible"
         android:id="@+id/downButton"
         android:layout_width="40dp"
         android:layout_height="40dp"
@@ -19,9 +18,8 @@
         android:layout_alignParentLeft="true"
         android:layout_marginBottom="16dp"
         android:layout_marginLeft="60dp" />
-    
+
     <Button
-        android:visibility="invisible"
         android:id="@+id/rightButton"
         android:layout_width="40dp"
         android:layout_height="40dp"
@@ -31,7 +29,6 @@
         android:layout_toRightOf="@+id/textView1" />
 
     <Button
-        android:visibility="invisible"
         android:id="@+id/leftButton"
         android:layout_width="40dp"
         android:layout_height="40dp"
@@ -41,7 +38,6 @@
         android:layout_marginLeft="14dp" />
 
     <Button
-        android:visibility="invisible"
         android:id="@+id/upButton"
         android:layout_width="40dp"
         android:layout_height="40dp"
@@ -49,11 +45,21 @@
         android:layout_alignLeft="@+id/downButton" />
 
     <Button
-        android:id="@+id/button1"
+        android:id="@+id/buttonB"
         android:layout_width="40dp"
         android:layout_height="40dp"
+        android:layout_alignBaseline="@+id/downButton"
         android:layout_alignBottom="@+id/downButton"
         android:layout_alignParentRight="true"
-        android:layout_marginRight="108dp" />
+        android:layout_marginRight="120dp" />
+
+    <Button
+        android:id="@+id/buttonA"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/upButton"
+        android:layout_marginRight="45dp"
+        android:layout_marginTop="30dp" />
 
 </RelativeLayout>
