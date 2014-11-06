@@ -16,7 +16,7 @@
         android:layout_height="120dp"
         android:layout_alignBottom="@+id/downButton"
         android:layout_alignRight="@+id/rightButton"
-        android:src="@drawable/dpad" />
+        android:src="@drawable/directionpad" />
 
     <Button
         android:id="@+id/downButton"
@@ -25,7 +25,8 @@
         android:layout_alignParentBottom="true"
         android:layout_alignParentLeft="true"
         android:layout_marginBottom="16dp"
-        android:layout_marginLeft="64dp" />
+        android:layout_marginLeft="64dp"
+        android:onClick = "down" />
 
     <Button
         android:id="@+id/rightButton"
@@ -34,21 +35,24 @@
         android:layout_alignParentBottom="true"
         android:layout_marginBottom="55dp"
         android:layout_marginLeft="30dp"
-        android:layout_toRightOf="@+id/textView1" />
+        android:layout_toRightOf="@+id/textView1"
+        android:onClick = "right" />
 
     <Button
         android:id="@+id/leftButton"
         android:layout_width="40dp"
         android:layout_height="40dp"
         android:layout_above="@+id/downButton"
-        android:layout_alignLeft="@+id/dPad" />
+        android:layout_alignLeft="@+id/dPad" 
+        android:onClick = "left"/>
 
     <Button
         android:id="@+id/upButton"
         android:layout_width="40dp"
         android:layout_height="40dp"
         android:layout_alignLeft="@+id/downButton"
-        android:layout_alignTop="@+id/dPad" />
+        android:layout_alignTop="@+id/dPad"
+        android:onClick = "up" />
 
     <Button
         android:id="@+id/buttonB"
@@ -57,7 +61,8 @@
         android:layout_alignBaseline="@+id/downButton"
         android:layout_alignBottom="@+id/downButton"
         android:layout_alignParentRight="true"
-        android:layout_marginRight="120dp" />
+        android:layout_marginRight="120dp"
+        android:onClick = "pressB" />
 
     <Button
         android:id="@+id/buttonA"
@@ -66,7 +71,8 @@
         android:layout_alignParentRight="true"
         android:layout_alignTop="@+id/upButton"
         android:layout_marginRight="45dp"
-        android:layout_marginTop="30dp" />
+        android:layout_marginTop="30dp" 
+        android:onClick = "pressA"/>
 
     <ImageView
         android:id="@+id/padA"

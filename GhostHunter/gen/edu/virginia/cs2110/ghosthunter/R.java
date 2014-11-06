@@ -13,7 +13,7 @@ public final class R {
     public static final class drawable {
         public static final int buttona=0x7f020000;
         public static final int buttonb=0x7f020001;
-        public static final int dpad=0x7f020002;
+        public static final int directionpad=0x7f020002;
         public static final int gamewallpaper=0x7f020003;
         public static final int ic_launcher=0x7f020004;
     }
