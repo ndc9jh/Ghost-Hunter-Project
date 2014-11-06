@@ -3,5 +3,7 @@
 
     <string name="app_name">Ghost Hunter</string>
     <string name="hello_world">Hello world!</string>
+    <string name="button_start">Go!</string>
+    <string name="title_activity_new">NewActivity</string>
 
 </resources>
