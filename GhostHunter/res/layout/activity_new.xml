@@ -10,6 +10,15 @@
         android:layout_height="wrap_content"
         android:text="@string/hello_world" />
 
+    <ImageView
+        android:contentDescription="@string/desc"
+        android:id="@+id/dPad"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_alignBottom="@+id/downButton"
+        android:layout_alignRight="@+id/rightButton"
+        android:src="@drawable/dPad" />
+
     <Button
         android:id="@+id/downButton"
         android:layout_width="40dp"
@@ -17,14 +26,14 @@
         android:layout_alignParentBottom="true"
         android:layout_alignParentLeft="true"
         android:layout_marginBottom="16dp"
-        android:layout_marginLeft="60dp" />
+        android:layout_marginLeft="64dp" />
 
     <Button
         android:id="@+id/rightButton"
         android:layout_width="40dp"
         android:layout_height="40dp"
         android:layout_alignParentBottom="true"
-        android:layout_marginBottom="51dp"
+        android:layout_marginBottom="55dp"
         android:layout_marginLeft="30dp"
         android:layout_toRightOf="@+id/textView1" />
 
@@ -32,17 +41,15 @@
         android:id="@+id/leftButton"
         android:layout_width="40dp"
         android:layout_height="40dp"
-        android:layout_alignBaseline="@+id/rightButton"
-        android:layout_alignBottom="@+id/rightButton"
-        android:layout_alignParentLeft="true"
-        android:layout_marginLeft="14dp" />
+        android:layout_above="@+id/downButton"
+        android:layout_alignLeft="@+id/dPad" />
 
     <Button
         android:id="@+id/upButton"
         android:layout_width="40dp"
         android:layout_height="40dp"
-        android:layout_above="@+id/rightButton"
-        android:layout_alignLeft="@+id/downButton" />
+        android:layout_alignLeft="@+id/downButton"
+        android:layout_alignTop="@+id/dPad" />
 
     <Button
         android:id="@+id/buttonB"
@@ -61,5 +68,25 @@
         android:layout_alignTop="@+id/upButton"
         android:layout_marginRight="45dp"
         android:layout_marginTop="30dp" />
+
+    <ImageView
+        android:contentDescription="@string/desc"
+        android:id="@+id/padA"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_alignBottom="@+id/leftButton"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="35dp"
+        android:src="@drawable/Xbox360_Button_A" />
+
+    <ImageView
+        android:id="@+id/padB"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_below="@+id/buttonA"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="110dp"
+        android:contentDescription="@string/desc"
+        android:src="@drawable/Xbox360_Button_B" />
 
 </RelativeLayout>
