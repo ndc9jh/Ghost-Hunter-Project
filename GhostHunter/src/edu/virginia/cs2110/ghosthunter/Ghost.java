@@ -6,11 +6,11 @@ public class Ghost {
 
 	int posX;
 	int posY;
-	Color color;
+	int color;
 	int health;
 	
-	public Ghost(Color c, int x, int y) {
-		this.color = c;
+	public Ghost(int color, int x, int y) {
+		this.color = color;
 		this.posX = x;
 		this.posY = y;
 	}
